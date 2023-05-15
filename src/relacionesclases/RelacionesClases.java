@@ -34,9 +34,9 @@ public class RelacionesClases {
     Persona nueva = new Persona();
     nueva.setNombre("lucia");
     nueva.setApellido("souto");
-    nueva.setNum(nuevo);
-        System.out.println(nueva.getNum().getNumero());
-    */    
+    nueva.setNum(nuevo);*
+        System.out.println(nueva.getNum());
+     */
     //MANOS A LA OBRA 2
     /*
     Realiza un programa en donde exista una clase Jugador que contenga nombre, apellido, posición
