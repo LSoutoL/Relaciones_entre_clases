@@ -32,7 +32,7 @@ public class RevolverAgua {
         this.posicActual = posicActual;
         this.posicAgua = posicAgua;
     }
-    
+       
     public Integer getPosicActual() {
         return posicActual;
     }

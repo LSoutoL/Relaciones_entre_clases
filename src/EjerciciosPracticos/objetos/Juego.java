@@ -38,12 +38,16 @@ public class Juego {
         do{
         jugadores.get(i).disparo(r);
          if (jugadores.get(i).isMojado()){
+             System.out.println("Se mojo el "+ jugadores.get(i).getNombre());
              ronda=true;
              break;
-         } else if (i<jugadores.size()){
+         } else System.out.println("El " + jugadores.get(i).getNombre() + " sigue en juego!");
+         if (i==jugadores.size()-1){
+             i=0;
+         } else
              i++;
-         } else i=0;      
+             
         } while (ronda==false);
-        System.out.println("Se mojo el jugador "+ jugadores.get(i).getNombre());
+        
     }
 }

@@ -35,25 +35,26 @@ public class EjerciciosPracticos {
         System.out.println(b);*/
         
         
-        /*ArrayList <Jugador> jugadores = new ArrayList<>();
+        
         RevolverAgua r = new RevolverAgua();
+        r.llenarRevolver();
+        
+        ArrayList <Jugador> jugadores = new ArrayList<>();
         System.out.println("Iniciaremos el juego. Primero indique la cantidad de jugarores");
-        Integer cant = leer.nextInt();
-        if ((cant>6)|| (cant<1)){
+        int cant = leer.nextInt();
+        if ((cant>6)||(cant<1)){
             cant=6;
         }
-        System.out.println(cant);
         for (int i = 0; i < cant; i++) {
         String nombre = "Jugador ";
         Integer id = i+1;
         nombre=nombre.concat(id.toString());
         jugadores.add(new Jugador(id, nombre));
         }
-        r.llenarRevolver();
-        System.out.println(r.getPosicActual() +", "+ r.getPosicAgua());
+        
         Juego j1 = new Juego();
         j1.llenarJuego(jugadores, r);
-        j1.ronda();*/
+        j1.ronda();
         
         
     
