@@ -51,9 +51,10 @@ public class BarajaServicio {
         if (carta==0){
            System.out.println(baraja.getCartas().get(carta)); 
         } else if (carta<baraja.getCartas().size()){
-        System.out.println(baraja.getCartas().get(carta+1));
+        System.out.println(baraja.getCartas().get(carta));
         } else System.out.println("Baraja finalizada.");
-        return carta++;
+        carta++;
+        return carta;
     }
     /* • mostrarBaraja(): muestra todas las cartas hasta el final. Es decir, si se 
     * saca una carta y luego se llama al método, este no mostrara esa primera carta.*/
@@ -78,8 +79,7 @@ public class BarajaServicio {
         if (cant<=cartasDisponibles(carta)){
             for (int j = carta; j < carta+cant; j++) {
                 System.out.println(baraja.getCartas().get(j));
-                carta+=cant;
-            }
+            } carta+=cant;
     } else System.out.println("Las cartas disponibles en la baraja son menos que las requeridas.");
     return carta;
     }
@@ -89,11 +89,9 @@ public class BarajaServicio {
     
     public void cartasMonton(int carta){
         if (carta>0){
-            for (int i = 0; i == carta; i++) {
-                System.out.println(baraja.getCartas().get(i));
-            }
-        } else if (carta==0){
-            System.out.println(baraja.getCartas().get(carta));
+          for (int i = 0; i < carta; i++) {
+              System.out.println(baraja.getCartas().get(i));
+            }  
         } else System.out.println("Aun no han salido cartas.");
     }
     
@@ -118,7 +116,7 @@ public class BarajaServicio {
             break;
             case 3: carta=siguienteCarta(carta);
             break;
-            case 4: System.out.println("Las cartas disponibles son " + (cartasDisponibles(carta)-1));
+            case 4: System.out.println("Las cartas disponibles son " + (cartasDisponibles(carta)));
             break;
             case 5: cartasMonton(carta);
             break;
