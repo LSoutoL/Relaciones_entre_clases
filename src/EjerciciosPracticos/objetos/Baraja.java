@@ -26,10 +26,6 @@ public class Baraja {
         this.cartas = cartas;
     }
 
-    @Override
-    public String toString() {
-        return "Baraja actual:" + cartas;
-    }
     
     
     

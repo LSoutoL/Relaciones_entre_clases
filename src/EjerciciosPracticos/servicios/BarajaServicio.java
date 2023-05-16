@@ -31,7 +31,7 @@ public class BarajaServicio {
     public void mazoPorPalo(Palo palo, ArrayList <Carta> cartas){
         Integer aux =1;
         for (int i = 0; i < 10; i++) {
-            if (aux.equals(8) || aux.equals(9)){
+            if (aux.equals(8)){
                 aux=aux+2;
             }
             cartas.add(new Carta(aux, palo));
