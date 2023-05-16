@@ -110,6 +110,7 @@ public class BarajaServicio {
         System.out.println("5. Ver las cartas que ya salieron");
         System.out.println("6. Mostrar baraja");
         System.out.println("7. Salir");
+        opcion=leer.nextInt();
         switch(opcion){
             case 1: barajar();
             break;
