@@ -46,6 +46,10 @@ public class Persona {
     public Perro getMascota() {
         return mascota;
     }
+
+    public void setMascota(Perro mascota) {
+        this.mascota = mascota;
+    }
     
 
     @Override
